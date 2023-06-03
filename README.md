@@ -4,7 +4,7 @@ A minmal API interface to the OpenAI API.
 
 ## Usage
 
-`[trivial-openai "0.0.0"]`
+`[ca.inaimathi/trivial-openai "0.0.0"]`
 
 ### Basics
 
