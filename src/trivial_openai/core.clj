@@ -97,6 +97,14 @@
             :frequency_penalty frequency-penalty
             :messages messages}))))
 
+(defn moderation [text-or-array & {:keys [model] :or {model :text-moderation-stable}}]
+  (assert (#{:text-moderation-stable :text-moderation-latest} model))
+  (json/decode
+   (-api-openai
+    "moderations"
+    :body {:model model
+           :input text-or-array})))
+
 ;;;;; File-related section
 ;;;;;;;;;; Utility
 (defn map->multipart

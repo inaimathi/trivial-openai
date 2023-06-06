@@ -25,6 +25,7 @@ In your code
 - `models`; returns a list of available models
 - `completion`; takes a prompt and a bunch of optional parameters and returns the completion
 - `chat`; takes a list of messages and a bunch of optional parameters and returns a chat response
+- `moderation`; takes a string or list of strings and optionally a model and returns a moderation assessment based on OpenAI TOS
 - `transcription`; takes an audio filename and a bunch of optional parameters and returns the transcribed text
 - `translation`; takes an audio filename and a bunch of optional paraeters and returns the _translated_ text
 - `image`; takes a prompt and returns an image matching it
